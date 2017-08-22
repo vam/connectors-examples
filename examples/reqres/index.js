@@ -4,8 +4,8 @@ import { crudToHttp, url, transformData } from '@crudlio/crudl-connectors-base/l
 const baseURL = 'https://reqres.in/api'
 
 const base = urlPath => createFrontendConnector(createBackendConnector({ baseURL }))
-    .use(crudToHttp())
-    .use(url(urlPath))
+    .use(crudToHttp()) // Map crud methods to http calls
+    .use(url(urlPath)) // Use parametrized URLs (e.g. 'api/users/:id')
 
 const users = base('users')
 const user = base('users/:id')
