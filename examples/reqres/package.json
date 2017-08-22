@@ -1,0 +1,16 @@
+{
+  "name": "dog-api",
+  "version": "1.0.0",
+  "description": "A connectors examples using dog.ceo api",
+  "main": "index.js",
+  "author": "vam",
+  "license": "MIT",
+  "scripts": {
+    "start": "babel-node index.js"
+  },
+  "dependencies": {
+    "@crudlio/crudl-connectors-base": "^0.1.2",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
